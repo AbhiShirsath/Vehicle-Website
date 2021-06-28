@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coupe</title>
+	<link rel="stylesheet" type="text/css" href="Coupe.css">
+</head>
+<body>
+	<input type="text" name="" id="myInput" placeholder="Enter the attribute" onkeyup="searchFun()">
+<div class="comp">
+	<table class="Bike">
+  <thead>
+    <tr>
+      <th  width="300" height="300" ><h1>Serial Number</h1></th>
+      <th  width="300" height="300"><h1>Specifications</h1></th>
+      <th><img src="BMW.jpg" width="300" height="300">
+      	<div>
+      BMW 8 series</div></th>
+      <th><div><img src="Porsche.jpg" width="300" height="300"></div>
+      	<div>Porsche 911</div>
+      	</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ganesh</td>
+      <td>Price</td>
+      <td>1.30crore</td>
+      <td>1.64crore</td>  
+    </tr>
+    <tr>
+      <td>Ramesh</td>
+      <td>Engine Type</td>
+      <td>B58 Turbocharged 16</td>
+      <td>Twin-Turbo flat-6</td>  
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Engine</td>
+      <td>2998 cc, 6 Cylinders Inline, 4 Valves/Cylinder, DOHC</td>
+      <td>2981cc, 6 Cylinders Flat, 4 Valves/Cylinder, DOHC</td>
+      
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Fuel Type </td>
+      <td>Petrol</td>
+      <td>Petrol</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Maximum Torque</td>
+      <td>500 Nm @ 1600 rpm</td>
+      <td>450 Nm @ 1950 rpm</td>
+  </tr>
+  <tr>
+      <td>Suresh</td>
+      <td>Maximum Power</td>
+      <td>335 bhp @ 5000 rpm</td>
+      <td>380 bhp @ 6500 rpm</td>
+  </tr>
+  <tr>
+      <td>7</td>
+      <td>Mileage(kmpl)</td>
+      <td>11.3</td>
+      <td>11.11</td>
+  </tr>
+  <tr>
+      <td>8</td>
+      <td>Driving Range(km)</td>
+      <td>768</td>
+      <td>711.04</td>
+  </tr>
+  <tr>
+      <td>9</td>
+      <td>Transmission</td>
+      <td>Automatic (Torque Converter) - 8 Gears, Manual Override & Paddle Shift, Sport Mode</td>
+      <td>Automatic (Dual Clutch) - 7 Gears, Paddle Shift, Sport Mode</td>
+  </tr>
+  <tr>
+      <td>10</td>
+      <td>Emission Standard</td>
+      <td>BS 6</td>
+      <td>BS 6</td>
+  </tr>
+   <tr>
+      <td>11</td>
+      <td>Turbocharger/Supercharger</td>
+      <td>Turbocharged</td>
+      <td>Twin Turbo</td>
+  </tr>
+  <tr>
+      <td>12</td>
+      <td>Others</td>
+      <td>Regenerative Braking, Idle Start/Stop</td>
+      <td>Idle Start/Stop</td>
+  </tr>
+  <tr>
+      <td>13</td>
+      <td>Length(mm)</td>
+      <td>5082</td>
+      <td>4519</td>
+  </tr>
+  <tr>
+      <td>14</td>
+      <td>Width(mm)</td>
+      <td>1932</td>
+      <td>1852</td>
+  </tr>
+  <tr>
+      <td>15</td>
+      <td>Height(mm)</td>
+      <td>1407</td>
+      <td>1298</td>
+  </tr>
+  <tr>
+      <td>16</td>
+      <td>Wheelbase(mm)</td>
+      <td>3023</td>
+      <td>2450</td>
+  </tr>
+  <tr>
+      <td>17</td>
+      <td>Ground clearance(mm)</td>
+      <td>128</td>
+      <td>--</td>
+  </tr>
+  <tr>
+      <td>18</td>
+      <td>Kerb Weight(kg)</td>
+      <td>1875</td>
+      <td>1505</td>
+  </tr>
+  <tr>
+      <td>19</td>
+      <td>Doors</td>
+      <td>4</td>
+      <td>2</td>
+  </tr>
+  <tr>
+      <td>20</td>
+      <td>Bootspace(litres)</td>
+      <td>440</td>
+      <td>132</td>
+  </tr>
+  <tr>
+      <td>21</td>
+      <td>Fuel Tank Capacity</td>
+      <td>68</td>
+      <td>64</td>
+  </tr>
+   <tr>
+      <td>22</td>
+      <td>Front Brake Type</td>
+      <td>Ventilated Disc</td>
+      <td>Ventilated Disc</td>
+  </tr>
+   <tr>
+      <td>23</td>
+      <td>Rear Brake Type</td>
+      <td>Ventilated Disc</td>
+      <td>Ventilated Disc</td>
+  </tr>
+   <tr>
+      <td>24</td>
+      <td>Steering Type</td>
+      <td>Power assisted (Electric)</td>
+      <td>Power assisted (Electric)</td>
+  </tr>
+   <tr>
+      <td>25</td>
+      <td>Front Tyres</td>
+      <td>245 / 45 R18</td>
+      <td>235 / 40 R19</td>
+  </tr>
+  <tr>
+      <td>26</td>
+      <td>Rear Tyres</td>
+      <td>275 / 40 R18</td>
+      <td>295 / 35 R20</td>
+  </tr>
+  </tbody>
+</table>
+<script type="text/javascript">
+	const searchFun = () =>{
+		let filter = document.getElementById('myInput').value.touppercase();
+
+		let Bike =document.getElementById('Bike');
+
+		let tr = Bike.getElementByTagName('tr');
+
+		for (var i = 0; i < tr.length; i++) {
+			let td = tr[i].getElementByTagName('td')[0];
+
+			if(td){
+				let textvalue = td.textContent || td.innerHTML;
+
+				if(textvalue.toUpperCase().indexOf(filter) > -1){
+					tr[i].style.display = " ";
+
+				}else{
+					tr[i].style.display = "none";
+				}
+			}
+		}
+	}
+</script>
+</div>
+</body>
+</html>

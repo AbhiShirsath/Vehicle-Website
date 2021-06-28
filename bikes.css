@@ -1,0 +1,46 @@
+* {
+  font-family: sans-serif; 
+}
+.secondheader{
+	color: blue;
+	text-align: center;
+}
+
+.Bike{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.Bike thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.Bike th,
+.Bike td {
+  padding: 12px 15px;
+}
+
+.Bike tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.Bike tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.bestseller{
+    text-align: center;
+}
+.BikeName{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
+	margin: 20px 0;
+	color: #4A235A;
+}
+
